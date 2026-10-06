@@ -9,7 +9,18 @@
 // console.log(x.setAttribute("x","www.chatgpt.com"));
 
 
-let change = document.querySelector("#heading");
+// let change = document.querySelector("#heading");
 
-change.style.color = "red";
-change.textContent = "Welcome to Rishi's world!";
+// change.style.color = "red";
+// change.textContent = "Welcome to Rishi's world!";
+
+let change = document.querySelector("#sel");
+let h1 = document.querySelector("h1");
+
+change.addEventListener("change",function(){
+    console.dir(change);
+    console.dir(h1);
+    h1.textContent = change.contentEditable
+;
+})
+
