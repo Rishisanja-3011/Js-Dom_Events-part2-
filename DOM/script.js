@@ -14,13 +14,13 @@
 // change.style.color = "red";
 // change.textContent = "Welcome to Rishi's world!";
 
-let change = document.querySelector("#sel");
-let h1 = document.querySelector("h1");
+// let change = document.querySelector("#sel");
 
-change.addEventListener("change",function(){
-    console.dir(change);
-    console.dir(h1);
-    h1.textContent = change.contentEditable
-;
-})
+
+// change.addEventListener("change",function(){
+    
+//     let h1 = document.createElement("h1");
+//     h1.textContent = change.ariaValueMax;
+// ;
+// })
 
