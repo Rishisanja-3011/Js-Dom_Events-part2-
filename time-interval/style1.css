@@ -1,0 +1,12 @@
+.alert{
+    height: 100px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-top: 250px;
+    margin-left: 550px;
+    display: block;
+}
+
