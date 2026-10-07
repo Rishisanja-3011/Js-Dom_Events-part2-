@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="todo-card">
+        <h1>My to-do list</h1>
+        <p class="subtitle">One step at a time.</p>
+
+        <form id="todo-form">
+            <input
+                id="todo-input"
+                type="text"
+                placeholder="What needs to get done?"
+                aria-label="New task"
+                autocomplete="off"
+                required
+            >
+            <button type="submit">Add task</button>
+        </form>
+
+        <ul id="todo-list" aria-label="Tasks"></ul>
+        <p id="empty-message">No tasks yet. Add one above!</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

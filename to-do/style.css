@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    place-items: center;
+    background: #f2f4f8;
+    color: #252a34;
+    font-family: Arial, sans-serif;
+}
+
+.todo-card {
+    width: min(100%, 480px);
+    padding: 32px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 12px 36px rgba(31, 41, 55, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.subtitle {
+    margin: 8px 0 24px;
+    color: #737b8c;
+}
+
+#todo-form {
+    display: flex;
+    gap: 10px;
+}
+
+#todo-input {
+    min-width: 0;
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d9deea;
+    border-radius: 8px;
+    font: inherit;
+}
+
+#todo-input:focus {
+    border-color: #6477e8;
+    outline: 2px solid rgba(100, 119, 232, 0.18);
+}
+
+button {
+    padding: 0 16px;
+    border: 0;
+    border-radius: 8px;
+    background: #586de0;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:hover {
+    background: #465acb;
+}
+
+#todo-list {
+    display: grid;
+    gap: 10px;
+    margin: 22px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #e7eaf0;
+    border-radius: 8px;
+}
+
+.todo-item input {
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    accent-color: #586de0;
+    cursor: pointer;
+}
+
+.todo-text {
+    min-width: 0;
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.todo-item.completed .todo-text {
+    color: #9299a7;
+    text-decoration: line-through;
+}
+
+.delete-button {
+    padding: 6px 9px;
+    background: #f2f3f7;
+    color: #636b7a;
+    font-size: 13px;
+}
+
+.delete-button:hover {
+    background: #ffe7e7;
+    color: #b52d36;
+}
+
+#empty-message {
+    margin: 22px 0 0;
+    color: #858c99;
+    text-align: center;
+}
+
+#empty-message.hidden {
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .todo-card {
+        padding: 24px 18px;
+    }
+
+    #todo-form {
+        flex-direction: column;
+    }
+
+    #todo-form button {
+        min-height: 42px;
+    }
+}
