@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    place-items: center;
+    background: linear-gradient(135deg, #151b36, #26375a);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.glass-card {
+    width: min(90%, 420px);
+    padding: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.progress-container {
+    height: 14px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.progress-bar {
+    width:0%;
+    height: 100%;
+    border-radius: inherit;
+    background: #70e1d1;
+    
+}
+
+.percent {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 12px;
+    text-align: right;
+}
